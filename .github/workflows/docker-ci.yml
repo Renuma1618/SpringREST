@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'temurin'   # 👈 FIXED: required field
 
       # Step 3: Build the Java app
       - name: Build with Maven
